@@ -25,7 +25,7 @@ on:
        default: solutions/
 
 env:
-  ENVIRONMENT_URL: 'htpps://org24eaa0e8.crm.dynamics.com'
+  ENVIRONMENT_URL: 'https://org24eaa0e8.crm.dynamics.com'
   CLIENT_ID: ${{ vars.POWER_PLATFORM_CLIENT_ID }}
   TENANT_ID: ${{ vars.POWER_PLATFORM_TENANT_ID }}
   ENV_GUID: '96b29a32-b2f5-ede5-b553-d383df909a15'
