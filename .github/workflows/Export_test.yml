@@ -25,9 +25,9 @@ on:
        default: solutions/
 
 env:
-  ENVIRONMENT_URL: 'org24eaa0e8.crm.dynamics.com'
-  CLIENT_ID: '562208ed-55e9-454b-a173-09cc4287a057'
-  TENANT_ID: '2ec7fa67-186d-4528-93af-7adda792f6bb'
+  ENVIRONMENT_URL: 'htpps://org24eaa0e8.crm.dynamics.com'
+  CLIENT_ID: ${{ vars.POWER_PLATFORM_CLIENT_ID }}
+  TENANT_ID: ${{ vars.POWER_PLATFORM_TENANT_ID }}
   ENV_GUID: '96b29a32-b2f5-ede5-b553-d383df909a15'
 
 permissions:
