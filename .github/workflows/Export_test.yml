@@ -1,4 +1,4 @@
-name: export-and-branch-solution
+name: IBD_export-and-branch-solution-dev
 # Export solution from DEV environment
 #  unpack it and prepare, commit and push a git branch with the changes
 
@@ -23,17 +23,19 @@ on:
        description: 'folder name to be created and checked in *do not change*'
        required: true
        default: solutions/
+
 env:
-#edit your values here
-  ENVIRONMENT_URL: '<ENVIRONMENTURL>'
-  CLIENT_ID: '<APPID>'
-  TENANT_ID: '<TENANT ID>'
+  ENVIRONMENT_URL: 'org24eaa0e8.crm.dynamics.com'
+  CLIENT_ID: '562208ed-55e9-454b-a173-09cc4287a057'
+  TENANT_ID: '2ec7fa67-186d-4528-93af-7adda792f6bb'
+  ENV_GUID: '96b29a32-b2f5-ede5-b553-d383df909a15'
+
 permissions:
   contents: write
 jobs:
   export-from-dev:
-    runs-on: windows-latest
-    # or you can say runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
+    # or you can say runs-on: ubuntu-latest/windows-latest
     env:
       RUNNER_DEBUG: 1
 
@@ -45,9 +47,9 @@ jobs:
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
-        environment-url: ${{env.ENVIRONMENT_URL}}
+        environment-url: 'https://org24eaa0e8.crm.dynamics.com'
         app-id: ${{env.CLIENT_ID}}
-        client-secret: ${{ secrets.PowerPlatformSPN }}
+        client-secret: ${{ secrets.POWER_PLATFORM_CLIENT_SECRET }}
         tenant-id: ${{env.TENANT_ID}}
 
 
@@ -56,7 +58,7 @@ jobs:
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
         app-id: ${{env.CLIENT_ID}}
-        client-secret: ${{ secrets.PowerPlatformSPN }}
+        client-secret: ${{ secrets.POWER_PLATFORM_CLIENT_SECRET }}
         tenant-id: ${{env.TENANT_ID}}
         solution-name: ${{ github.event.inputs.solution_name }}
         solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
