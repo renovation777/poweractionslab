@@ -5,7 +5,7 @@ name: release-solution-to-prod
 
 on:
   workflow_run:
-    workflows: ["IBD_export-and-branch-solution-dev"]
+    workflows: ["IBD_export-and-branch-solution-dev","IBD_export-and-save-solution"]
     types:
       - completed
   workflow_dispatch:
