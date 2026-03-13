@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d2b6f9c3-b835-4aad-8434-d580122f1f75}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{ae523db2-3fd6-44ad-8b79-b512f0e319b1}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{2bc63ac9-891d-43a0-bab0-bd634619241f}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5601ba2a-b6e9-4771-8a20-4dd15b7ed7fc}">
+                        <labels>
+                          <label description="Inbound Shipment" languagecode="1033" />
+                        </labels>
+                        <control id="cr1d7_inboundshipment1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr1d7_inboundshipment1" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3ff5d787-3c12-4de8-90ef-c7e30c7649df}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1be8481e-2f09-4c4a-94e0-a1706df4a64f}">
+                        <labels>
+                          <label description="Client" languagecode="1033" />
+                        </labels>
+                        <control id="cr1d7_clientid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="cr1d7_clientid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{806b57d2-3d0e-4bc1-9351-42725cb163b0}">
+                        <labels>
+                          <label description="Stage" languagecode="1033" />
+                        </labels>
+                        <control id="cr1d7_stage" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr1d7_stage" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{448d073c-db81-4aa1-94eb-6fa83a7c6e83}">
+                        <labels>
+                          <label description="Transport" languagecode="1033" />
+                        </labels>
+                        <control id="cr1d7_transport" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr1d7_transport" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bce335da-b32f-432d-b0fa-b95515f1a431}">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="cr1d7_location" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr1d7_location" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{941a7caf-46bd-44ed-803a-f801a4638711}">
+                        <labels>
+                          <label description="ETA" languagecode="1033" />
+                        </labels>
+                        <control id="cr1d7_eta" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="cr1d7_eta" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5969bea1-207f-432c-8ef8-cfe357b837ef}">
+                        <labels>
+                          <label description="Health" languagecode="1033" />
+                        </labels>
+                        <control id="cr1d7_health" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr1d7_health" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{78675411-0634-434f-9f55-c43ee7ced35e}">
+                        <labels>
+                          <label description="Action" languagecode="1033" />
+                        </labels>
+                        <control id="cr1d7_action" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr1d7_action" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

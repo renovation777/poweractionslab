@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_cr1d7_inboundshipment" />
+  <EntityRelationship Name="cr1d7_InboundShipment_cr1d7_Client" />
+  <EntityRelationship Name="lk_cr1d7_inboundshipment_createdby" />
+  <EntityRelationship Name="lk_cr1d7_inboundshipment_modifiedby" />
+  <EntityRelationship Name="owner_cr1d7_inboundshipment" />
+  <EntityRelationship Name="team_cr1d7_inboundshipment" />
+  <EntityRelationship Name="user_cr1d7_inboundshipment" />
+</EntityRelationships>

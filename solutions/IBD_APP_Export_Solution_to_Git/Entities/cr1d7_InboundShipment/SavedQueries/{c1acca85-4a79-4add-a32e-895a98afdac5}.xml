@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c1acca85-4a79-4add-a32e-895a98afdac5}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr1d7_inboundshipment1" select="1" icon="1" preview="1">
+        <row name="result" id="cr1d7_inboundshipmentid">
+          <cell name="cr1d7_inboundshipment1" width="300" />
+          <cell name="cr1d7_clientid" width="150" />
+          <cell name="cr1d7_stage" width="150" />
+          <cell name="cr1d7_transport" width="150" />
+          <cell name="cr1d7_location" width="150" />
+          <cell name="cr1d7_eta" width="150" />
+          <cell name="cr1d7_health" width="150" />
+          <cell name="cr1d7_action" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr1d7_inboundshipment">
+          <attribute name="cr1d7_inboundshipmentid" />
+          <attribute name="cr1d7_inboundshipment1" />
+          <attribute name="createdon" />
+          <order attribute="cr1d7_inboundshipment1" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr1d7_clientid" />
+          <attribute name="cr1d7_stage" />
+          <attribute name="cr1d7_transport" />
+          <attribute name="cr1d7_location" />
+          <attribute name="cr1d7_eta" />
+          <attribute name="cr1d7_health" />
+          <attribute name="cr1d7_action" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Inbound Shipments" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
